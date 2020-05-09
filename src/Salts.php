@@ -31,6 +31,7 @@ class Salts
         $salts['SECURE_AUTH_SALT'] = $generator->salt();
         $salts['LOGGED_IN_SALT'] = $generator->salt();
         $salts['NONCE_SALT'] = $generator->salt();
+        $salts['WP_CACHE_KEY_SALT'] = $generator->salt();
 
         return $salts;
     }
